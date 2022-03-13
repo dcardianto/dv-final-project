@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        .spacer {
+            height: 50px;
+        }
+        .title {
+            margin-top: 20 auto;
+            font-family: 'Georgia';
+            font-size: 35px;
+            font-style: italic;
+            fill: #333;
+            text-align: center;
+            height: 80px;
+        }
+        .chart-container {
+            max-width: 1100px;
+            /* border: 3px solid red; */
+            margin: 0 auto;
+            /* auto centers the div */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        svg {
+            /* border: 2px solid purple; */
+            overflow: visible;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .headline {
+            font-style: italic;
+            font-family: 'Georgia';
+            font-size: 27px;
+        }
+
+        h1 {
+            margin: 10px auto;
+        }
+
+        .x .domain {
+            display: none;
+        }
+
+        .y .domain {
+            display: none;
+        }
+
+        .y .tick text {
+            font-size: 14px;
+            fill: #333;
+
+        }
+
+        .x .tick text {
+            font-size: 14px;
+            fill: #333;
+        }
+        .description {
+            font-size: 20px;
+            font-family: Arial;
+            text-align: justify;
+            margin-left: 0;
+        }
+        .footnote{
+            font-size: 12px;
+            font-family: 'Arial';
+            text-align: justify;
+            margin-left: 0;
+        }
+        .endline {
+            font-size: 20px;
+            font-family: Georgia;
+            font-style: italic;
+            text-align: justify;
+            margin-left: 0;
+            height: 60px;
+        }
+        #container-1 {
+            height:600px;
+        }
+
+        #container-2 {
+            height: 600px;
+        }
+
+        #container-3 {
+            height: 600px;
+        }
+
+        #container-4 {
+            height: 600px;
+        }
+
+        #par-2 {
+            height: 130px;
+        }
+
+        #par-3 {
+            height: 130px;
+        }
+        #par-4{
+            height: 150px;
+        }
+
+        
+/*  
+        #head-1 {
+            height: 200px;
+        } */
+
+    </style>
+</head>
+
+<body>
+    <div class="spacer"></div>
+    <div class="title">
+        <strong>How modern American baby names are influenced by pop culture</strong>
+    </div>
+    <div class="chart-container">
+        <div style="width: 4%; height: 30px; float: left; " >
+            <img src="pp.png" style="width: 30px; height: 30px; margin-top: -10;">
+        </div>
+        <div style="margin-left: 4%; height: 30px; font-size: 19px;" >
+            by: Cahyo Ardianto
+        </div>
+    </div>
+    <div class="chart-container" id="par-1">
+        <p class="description">As a parent, we want the best for our kids.
+            Naming them symbolizes our hope, a wish of how we would like to see them grow.
+            The source of inspiration may vary, from religious figures, traditional cultures, 
+            family, friends, or even fictional characters. Today, we will look at some unique popular
+            influences that move the wish of American parents. These are trends of <strong>baby first names</strong> we managed 
+            to dig from 1880-2017 SSA records. 
+        </p>
+    </div>
+    <div class="chart-container" id="container-1">
+        <h1 class="headline" id="head-1">
+            1. Elon Musk's achievements translates to more boys named after him 
+        </h1>
+        <svg width="1050px" height="500px" id="svg1">
+        </svg>
+    </div>
+    <div class="chart-container" id="par-2">
+        <p class="description">
+            While the name "Elon" was not unknown to Americans, its popularity doubled in 2014. That was the
+            same year Musk's SpaceX was awarded $2.6 billion contract by NASA to develop spacecraft. Two years 
+            later, Elon's name took another jump after Musk recognized as No.7 Business Visionary by Business Insider,
+            an American news website. The increasing popularity continued in 2017, the year in which Musk won Oslo Business for Peace Awards.    
+        </p>
+    </div>
+    <div class="chart-container" id="container-2">
+        <h1 class="headline">
+            2. Harry Potter saga "revived" Hermione
+        </h1>
+
+        <svg width="1050px" height="500px" id="svg2">
+        </svg>
+    </div>
+    <div class="chart-container" id="par-3">
+        <p class="description">
+            Hermione was a common baby girl name in period surrounding World War 1 (1914-1918). 
+            However, we saw only few newborns with her name after Great Depression ends (1939). Its last use in pre-Harry Potter US was on 1975, for only five girls.
+            The release of Harry Potter movies really "resuscitate" the name. Starting with Harry Potter and The Sorcerer Stone in 2001, its getting more common for baby girl to be named after the smart witch Hermione Granger.
+        </p>
+    </div>
+    <div class="chart-container" id="container-3">
+        <h1 class="headline">
+            3. More parents  named their kids Anakin, after the jedi Anakin Skywalker
+        </h1>
+
+        <svg width="1050px" height="500px" id="svg3">
+        </svg>
+
+    </div>
+    <div class="chart-container" id="par-4">
+        <p class="description">
+            The fictional fallen jedi has his name popularized after his origin movies are released. 
+            People may wish to have that talented kid-pilot in the 1999's movie as their boy,
+            or the handsome jedi-knight that Hayden Christensen played at 2005. 
+            Anakin even got more popularity at the release of the sequel trilogy (2014-2017),
+            movies which were set after his demise and in which he was only mentioned by the characters.
+            The name itself is more commonly seen as last name before Star Wars saga, such as the English film director Ken Annakin.
+        </p>
+    </div>
+    <div class="chart-container" id="container-4">
+        <h1 class="headline">
+            4. Parents even use "Khaleesi", the title of a fictional Game of Thrones heroine 
+        </h1>
+
+        <svg width="1050px" height="500px" id="svg4">
+        </svg>
+
+    </div>
+    <div class="chart-container" id="par-4">
+        <p class="description">
+            Khaleesi (a wife of Khal) was the title of Daenerys Targaryen, after she married Khal Drogo,
+            a chieftain of brutish Dothraki horde in the first season of Game of Thrones. 
+            Daenerys herself was depicted as a brave woman that want to establish a just world, 
+            an inspiring figure parents might want their daughters to be.
+            Her especially popularity shot up in 2014, when she liberates the slave city of Mereen with her 3 dragons.
+            Finally, more than 400 girls are named after her in 2017, 
+            as she and her dragons fought alongside Jon Snow (another protagonist) as champions in the war against army of the dead.    
+        </p>
+    </div>
+
+    <div class="chart-container" id="par-5">
+        <h1 class="headline">
+            A takeaway:
+        </h1>
+        <p class="description">
+            While these trends by no means defeat the popularity of traditional names in the US, 
+            it is interesting to see how some American parents become increasingly unconventional in search
+            for baby names inspiration. 
+        </p>
+        <p class="endline">
+            <strong>So, from a successful enterpreneur to fictional characters, have you got inspiration to name your little one?</strong>
+            </p>
+    </div>
+    <div class="chart-container" id="par-6">
+        <p class="footnote"><strong>Note: all the data are obtained using R package of babynames, as downloaded in March 11, 2022.
+            Details related to the data can be viewed <a href=" https://github.com/hadley/babynames ">here</a>.</strong>
+        </p>
+    </div>
+</body>
+
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="https://unpkg.com/enter-view@1.0.0/enter-view.min.js"></script>
+<script src='https://unpkg.com/stickyfilljs@2.0.5/dist/stickyfill.js'></script>
+
+<script>
+    console.log(d3)
+    let width = 1050;
+    let height = 500;
+
+    let colors3day = ["#40e0d0", "#008080"];
+
+    let color = d3.scaleOrdinal()
+        .domain(["m", "f" ])
+        .range(colors3day)
+        .unknown("#ccc")
+
+    var svg1 = d3.select("body").select("#svg1")
+    var svg2 = d3.select("body").select("#svg2")
+    var svg3 = d3.select("body").select("#svg3")
+    var svg4 = d3.select("body").select("#svg4")
+
+    let margin = { top: 0, right: 0, bottom: 30, left: 0 };
+
+
+
+    d3.csv("names.csv").then(function (data) {
+
+        console.log({ data })
+
+        data.forEach(d => {
+            d.f = +d.f
+            d.m = +d.m
+        })
+        
+        let dElon = [...data].filter(d => d.name == "Elon")
+        let dHermione = [...data].filter(d => d.name == "Hermione")
+        let dAnakin = [...data].filter(d => d.name == "Anakin")
+        let dKhaleesi = [...data].filter(d => d.name == "Khaleesi")
+
+        console.log({ dAnakin })
+        
+        makeChart(dElon, svg1)
+        makeChart(dHermione, svg2)
+        makeChart(dAnakin, svg3)
+        makeChart(dKhaleesi, svg4)
+
+        // annotateTop(svg3, dAnakin, "Phantom Menace", "3/11/1999")
+        // annotateTop(svg3, dAnakin, "Revenge of The Sith", "3/11/2005")
+        // annotateTop(svg3, dAnakin, "The Force Awakens", "3/11/2014")
+        // annotateTop(svg4, dKhaleesi, "1st season of GOT", "3/11/2011")
+        // annotateTop(svg4, dKhaleesi, "Daenerys rules a slave city", "3/11/2014")
+
+
+        // annotateFree("#container-2", '2003: A year after "Chamber of Secrets Movie" ', "1430px", "300px", 275)
+        // annotateFree("#container-2", "2016: Ranked 7th Business Visionary", "1360px", "200px", 275)
+        // annotateFree("#container-2", "2017: Oslo Business for Peace Awards", "1368px", "100px", 275)
+        // annotateFree(svg1, dElon, "NASA", 200, 200)
+        annotateFree(svg1, dElon, "2014: $2.6 Bio NASA award", 818, 250)
+        annotateFree(svg1, dElon, "2016: Ranked 7th Business Visionary", 762, 145)
+        annotateFree(svg1, dElon, "2017: Oslo Business for Peace Awards", 765, 30)
+        annotateFree(svg2, dHermione, "2001: Harry Potter & Sorcerer Stone", 650, 460)
+        annotateFree(svg2, dHermione, '2003: A year after "Chamber of Secrets Movie"', 600, 125)
+        annotateFree(svg2, dHermione, '2006: A year after "Goblet of Fire Movie"', 670, 35)
+        annotateFree(svg2, dHermione, '2017: A year after "Fantastic Beast Movie"', 750, -5)
+        annotateFree(svg3, dAnakin, '1999: Phantom Menace released', 100, 300)
+        annotateFree(svg3, dAnakin, '2005: Revenge of The Sith released', 400, 280)
+        annotateFree(svg3, dAnakin, '2014: The Force Awakens released', 650, 150)
+        annotateFree(svg3, dAnakin, '2017: The Last Jedi released', 850, -5)
+        annotateFree(svg4, dKhaleesi, '2011: The shows begin', -15, 450)
+        annotateFree(svg4, dKhaleesi, '2014: "Khaleesi" frees Mereen', 400, 90)
+        annotateFree(svg4, dKhaleesi, '2017: "Khaleesi" allies with Jon Snow', 800, -10)
+
+        function makeChart(df, svg) {
+            let series = d3.stack()
+                .keys(["m", "f"])
+                (df)
+
+            console.log({ series })
+
+            let x = d3.scaleBand()
+                .domain(df.map(d => d["year"]))
+                .range([0, width])
+                .paddingInner(0.05)
+
+            let y = d3.scaleLinear()
+                .domain([0, d3.max(df.map(function (d) {return d.f + d.m}))])
+                .range([height, 0])
+
+            let xTickSettings = d3.axisBottom(x)
+                .tickSize(0)
+                .tickPadding(45)
+                .tickFormat((d, i) => {
+                    console.log(d, i)
+                    if (i % 5 == 0) {
+                        return d3.timeFormat("%Y")(new Date(d)) ///https://github.com/d3/d3-time-format
+                    } else {
+                        return ""
+                    }
+                })
+
+            let xAxis = svg.append("g")
+                .attr("class", "y axis")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .call(xTickSettings)
+
+            let yTickSettings = d3.axisLeft(y)
+                .ticks(4)
+                .tickSize(-width)
+                .tickPadding(10)
+                
+                
+
+            let yAxis = svg.append("g")
+                .attr("class", "y axis")
+                .attr("transform", `translate(${margin.left},0)`)
+                .attr("color", "#D3D3D3")
+                .call(yTickSettings)
+            
+            let group = svg.append("g")
+                .selectAll("g")
+                .data(series)
+                .join("g")
+                .attr("fill", d => color(d.key))
+
+            let bars = group
+                .selectAll("rect")
+                .data(d => d)
+                .join("rect")
+                .attr("x", (d, i) => x(d.data.year))
+                .attr("width", x.bandwidth())
+                .attr("y", d => y(d[1]))
+                .attr("height", d => y(d[0]) - y(d[1]))
+            
+            let legend = ["Male", "Female"]
+            
+            let legendColors = d3.scaleOrdinal()
+                .domain(legend)
+                .range(colors3day)
+
+            var size = 20
+            svg.selectAll("mydots")
+                .data(legend)
+                .enter()
+                .append("rect")
+                .attr("x", width + 10)
+                .attr("y", function(d,i){ return 100 + i*(size+5)}) 
+                .attr("width", size)
+                .attr("height", size)
+                .style("fill", function(d){ return legendColors(d)})
+
+
+            svg.selectAll("mylabels")
+                .data(legend)
+                .enter()
+                .append("text")
+                .attr("x", width + 10 + size*1.2)
+                .attr("y", function(d,i){ return 100 + i*(size+5) + (size/2)})
+                .style("fill", "black")
+                .text(function(d){ return d})
+                .attr("text-anchor", "left")
+                .style("alignment-baseline", "middle") 
+        }
+
+        function annotateTop(svg, df, text, date) {
+            let newPoint = data.filter(d => d.year == date)[0]
+                
+            let x = d3.scaleBand()
+                .domain(df.map(d => d["year"]))
+                .range([0, width])
+                .paddingInner(0.05)
+                
+            let y = d3.scaleLinear()
+                .domain([0, d3.max(df.map(function (d) {return d.f + d.m}))])
+                .range([height, 0])
+
+            svg.append("text")
+                .attr("class", "g-top-label")
+                .attr("x", x(date))
+                .attr("y", margin.top)
+                .attr("dy", -15)
+                .attr("dx", x.bandwidth() / 2 - 15 )
+                .text(text)
+                .style("fill", "black")
+
+            svg.append("line")
+                .attr("x1", x(date) + x.bandwidth() / 2)
+                .attr("x2", x(date) + x.bandwidth() / 2)
+                .attr("y1", -10)
+                .attr("y2", d => {
+                    if (newPoint.f == 0) {
+                        return y(newPoint.m - 1)
+                    }
+                    else {
+                        return y(newPoint.f)
+                    }
+                }) 
+                .style("stroke", "#D3D3D3")
+        }
+
+        function annotateFree(svg, df, text, left, top) {
+            let x = d3.scaleBand()
+                .domain(df.map(d => d["year"]))
+                .range([0, width])
+                .paddingInner(0.05)
+                
+            let y = d3.scaleLinear()
+                .domain([0, d3.max(df.map(function (d) {return d.f + d.m}))])
+                .range([height, 0])
+
+            svg.append("text")
+                .attr("class", "g-top-label")
+                .attr("x", left)
+                .attr("y", top)
+                .text(text)
+                .style("fill", "black")
+        }
+    
+        // //     //https://github.com/d3/d3-shape#stacks
+
+        // function annotateFree(container, text, x, y, width) {
+        //     d3.select("body").select(container).append("div")
+        //         .attr("class", "annotation")
+        //         .html(text)
+        //         .style("left", x)
+        //         .style("top", y)
+        //         .style("width", width)
+        // }
+    //     function annotateFree(svg, df, text, left, top) {
+    //         // let x = d3.scaleBand()
+    //         //     .domain(df.map(d => d["year"]))
+    //         //     .range([0, width])
+    //         //     .paddingInner(0.05)
+                
+    //         // let y = d3.scaleLinear()
+    //         //     .domain([0, d3.max(df.map(function (d) {return d.f + d.m}))])
+    //         //     .range([height, 0])
+
+    //         svg.append(text)
+    //             .attr("class", "annotation")
+    //             .attr("x", left)
+    //             .attr("y", top)
+    //             .text(text)
+    //             .style("fill", "black")
+    //     }
+    })       
+
+
+
+</script>
